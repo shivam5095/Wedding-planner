@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <a href="index.html">About Us</a>
+            <a href="portfolio.html">Our Portfolio</a>
+            <a href="review.html">Reviews</a>
+        </nav>
+    </div>
+        <!-- Inquiry Form Section -->
+    <section id="inquiry">
+        <h2>Enquire Now</h2>
+        <form action="#" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="wedding-date">Wedding Date</label>
+            <input type="date" id="wedding-date" name="wedding-date" required>
+
+            <label for="budget">Estimated Budget</label>
+            <input type="number" id="budget" name="budget" placeholder="in dollars" required>
+
+            <label for="services">Services Interested In</label>
+            <select id="services" name="services">
+                <option value="full-planning">Full Planning</option>
+                <option value="partial-planning">Partial Planning</option>
+                <option value="day-of-coordination">Day-of Coordination</option>
+                <option value="destination">Destination Wedding</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Additional details"></textarea>  <form id="enquiryForm">
+                <!-- Your form fields -->
+                <button type="button" class="cta-button" onclick="redirectToPortfolio()">Submit Enquiry</button>
+              </form>
+              
+              <script>
+                function redirectToPortfolio() {
+                  // Add form validation here if needed
+                  window.location.href = "portfolio.html";
+                }
+              </script>
+        </form>
+    </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2024 Wedding Planner. All Rights Reserved.</p>
+        </footer>
+
+</body>
+</html>
